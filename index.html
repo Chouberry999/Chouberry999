@@ -32,10 +32,33 @@
       </div>
     </form>
   </div>
-    <form action="file.php" method="POST">
+   <form action="file.php" method="POST">
+    <h2>Please Login to My Class E10 Group 5</h2>
+    <div class="input-field">
+        <input type="text" name="email" required>
+        <label>Enter your email</label>
+    </div>
+    <div class="input-field">
+        <input type="password" name="password" required>
+        <label>Enter your password</label>
+    </div>
+    <div class="forget">
+        <label for="remember">
+            <input type="checkbox" id="remember">
+            <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+    </div>
+    
+    <!-- Cloudflare Turnstile CAPTCHA -->
     <div class="cf-turnstile" data-sitekey="0x4AAAAAABCMaiHfI0DPCW-e"></div>
+    
     <br>
-    <input type="submit" value="Submit">
+    <button type="submit">Log In</button>
+    <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
     </form>
+
 </body>
 </html>
