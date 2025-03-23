@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($responseData->success) {
         echo "CAPTCHA Verification Passed!";
+        // Process login
     } else {
         echo "CAPTCHA Verification Failed!";
     }
